@@ -563,9 +563,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 **Project Maintainer:** dhou22
 
-- GitHub: [@dhou22](https://github.com/dhou22)
-- Project Link: [https://github.com/dhou22/Get-Hired-Project](https://github.com/dhou22/Get-Hired-Project)
-- Issues: [Report a Bug](https://github.com/dhou22/Get-Hired-Project/issues)
+- GitHub: 
+- Project Link: )
+- Issues: [Report a Bug]()
 
 ---
 
