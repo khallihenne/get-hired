@@ -1,0 +1,60 @@
+<div class="wrap">
+  <h1>🤖 Get-Hired ChatBot</h1>
+
+  <div class="chat">
+    <div *ngFor="let m of messages" class="msg" [class.user]="m.role==='user'">
+      {{ m.content }}
+    </div>
+
+    <!-- Pretty render for the latest assistant payload (candidate or market) -->
+    <ng-container *ngIf="lastAssistantRaw() as r">
+      <!-- Candidate screening cards -->
+      <div *ngIf="isCand(r)" class="cand-block">
+        <h3>Top candidats</h3>
+        <div class="cards">
+          <div class="card" *ngFor="let c of r.content?.candidates">
+            <div class="card-row">
+              <div class="name">{{ c.name }}</div>
+              <div class="score">{{ c.score }} / 100</div>
+            </div>
+            <div class="badge" [class.high]="c.confidence==='High'">{{ c.confidence }}</div>
+            <div class="sub">
+              <div><strong>Forces</strong> — {{ (c.strengths || []).join(' • ') }}</div>
+              <div><strong>Points faibles</strong> — {{ (c.concerns || []).join(' • ') }}</div>
+            </div>
+            <div class="rec">{{ c.recommendation }}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Market research -->
+      <div *ngIf="isMarket(r)" class="mrkt-block">
+        <h3>Résumé marché</h3>
+        <pre class="mono">{{ r.content?.salary_overview }}</pre>
+        <div class="ins">
+          <strong>Insights</strong>
+          <ul>
+            <li *ngFor="let i of (r.content?.market_insights || [])">{{ i }}</li>
+          </ul>
+        </div>
+        <div class="ins">
+          <strong>Recommandations</strong>
+          <ol>
+            <li *ngFor="let i of (r.content?.hiring_recommendations || [])">{{ i }}</li>
+          </ol>
+        </div>
+        <div class="src" *ngIf="r.content?.sources?.length">
+          <strong>Sources</strong>
+          <ul>
+            <li *ngFor="let s of r.content.sources">{{ s }}</li>
+          </ul>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="inputrow">
+    <input [(ngModel)]="input" (keyup.enter)="send()" placeholder="Tapez votre message..." />
+    <button (click)="send()" [disabled]="loading">{{ loading ? '...' : 'Envoyer' }}</button>
+  </div>
+</div>

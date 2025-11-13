@@ -1,0 +1,21 @@
+.wrap{max-width:880px;margin:40px auto;font-family:Inter,system-ui,Arial}
+h1{font-weight:700;letter-spacing:.2px;margin:0 0 14px}
+.chat{border:1px solid #ececf1;border-radius:14px;padding:16px;min-height:340px;background:#fff}
+.msg{padding:10px 12px;margin:6px 0;border-radius:10px;background:#f3f4f6}
+.msg.user{background:#e0e7ff;text-align:right}
+.inputrow{display:flex;gap:8px;margin-top:12px}
+input{flex:1;padding:10px 12px;border-radius:8px;border:1px solid #ddd;outline:none}
+button{padding:10px 16px;border-radius:8px;border:0;background:#7c3aed;color:#fff;cursor:pointer}
+button[disabled]{opacity:.6;cursor:not-allowed}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin-top:10px}
+.card{border:1px solid #eee;border-radius:12px;padding:12px;background:#fafafa}
+.card-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.name{font-weight:600}
+.score{font-weight:700}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;background:#eef;border:1px solid #dde;margin-bottom:8px}
+.badge.high{background:#e9fbe9;border-color:#cdeecd}
+.sub{font-size:.95rem;color:#333;display:grid;gap:4px;margin:6px 0}
+.rec{margin-top:8px;font-size:.95rem;color:#222}
+.mono{background:#0e1117;color:#d1e7ff;padding:10px;border-radius:8px;overflow:auto}
+.ins{margin-top:10px}
+.src{margin-top:10px}

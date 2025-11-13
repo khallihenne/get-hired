@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+python-dotenv
+pydantic
+fastapi-cors
+requests
+weaviate-client
+huggingface_hub
+langchain
+langchain-community
+langchain-weaviate
+langchain-huggingface
+langchain-mistralai
+tavily-python
+
+
