@@ -599,10 +599,6 @@ This project was made possible by:
 
 <div align="center">
 
-Made by [dhou22](https://github.com/dhou22)
 
-If you find this project helpful, please consider giving it a star.
-
-![GitHub stars](https://img.shields.io/github/stars/dhou22/Get-Hired-Project?style=social)
 
 </div>
