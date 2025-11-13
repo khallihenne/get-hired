@@ -561,7 +561,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-**Project Maintainer:** dhou22
+**Project Maintainer:** 
 
 - GitHub: 
 - Project Link: )
