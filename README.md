@@ -118,7 +118,7 @@ Get Hired addresses these limitations by understanding semantic meaning beyond k
 #### 1. Clone the Repository
 
 bash
-git clone https://github.com/dhou22/Get-Hired-Project.git
+git clone https://github.com/khallihenne/get-hired.git
 cd Get-Hired-Project
 
 
@@ -508,7 +508,7 @@ MiniLM-L6-v2   | 94%           | 0.85            | 0.08s
 - Skills gap analysis
 - Automated interview question generation
 
-See the [open issues](https://github.com/dhou22/Get-Hired-Project/issues) for proposed features and known issues.
+See the [open issues](https://github.com/khallihenne/get-hired/issues) for proposed features and known issues.
 
 ---
 
